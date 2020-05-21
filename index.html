@@ -5,23 +5,42 @@ Select image
 Print output of title and image on right side of the page -->
 
 
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<title>Lab 3 File Structures</title>
-</head>
-	<body>
-		<div id="content">
-			<h1></h1>
-			<p></p>
-			<h2><u></u></h2>
-			<p><br></br></p>
-			<h3><u>Results</u></h3>
-			<p><br></br></p>
-			<p><br></br>
-			<br>
-			
-			<p><br></br></p>
-	</body>
-</div>
-</html>
+  <head>
+    <title>Poster</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="css/site.css">
+    <script src= "js/final.js"defer> </script>
+  </head>
+  <body id = "body">
+    <!-- Title of page -->
+    <h1 id = "page title">Choose Your </h1>
+    <!-- Input form for Movie -->
+    <form>
+      <lable for="movie-name">Input your movie title here:</lable><br>
+      <input type = "text" id ="movie-name" name= "movie-name" value ="your name">
+    </form>
+    <!--  Title Drop down list for Style of Movie Title  -->
+    <label for="genera">Choose a Style:</label>
+
+<select name="genera" id="genera">
+  <option value="romance">Romance</option>
+  <option value="western">Western</option>
+  <option value="action">Action</option>
+  <option value="sci-fi">Sci-fi</option>
+  <option value="horror">Horror</option>
+  <option value="superhero">Superhero</option>
+</select>
+<br></br>
+    <!--Select image -->
+    <button onclick="myFunction()" class = "poster"><img src="img/Webp.net-resizeimage.jpg"></button>
+    <button onclick="myFunction()" class = "poster"><img src= "img/Webp.net-resizeimage.jpg"></button>
+    <button onclick="myFunction()" class = "poster"><img src= "img/Webp.net-resizeimage.jpg"></button>
+    <button onclick="myFunction()" class = "poster"><img src="img/Webp.net-resizeimage.jpg"></button>
+    <button onclick="myFunction()" class = "poster"><img src="img/Webp.net-resizeimage.jpg"></button>
+    <button onclick="myFunction()" class = "poster"><img src="img/Webp.net-resizeimage.jpg"></button>
+<br></br>
+    <!--Print output of title and image on right side of the page -->
+    <div id=output> </div>
