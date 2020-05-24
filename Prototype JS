@@ -1,0 +1,36 @@
+var chosenIMG = "untitled6.jpg";
+//Set image buttons as variables
+var imgA = document.getElementById("one")
+  imgA.addEventListener("click", function(){
+    chosenIMG = "img/horrorSmallV1.jpg"
+  });
+var imgB = document.getElementById("two")
+      imgB.addEventListener("click", function(){
+        chosenIMG = "img/romanceSmallV1.jpg"
+      });
+var imgC = document.getElementById("three")
+      imgC.addEventListener("click", function(){
+         chosenIMG = "img/scifiSmallV1.jpg"
+      });
+var imgD = document.getElementById("four")
+      imgD.addEventListener("click", function(){
+          chosenIMG = "img/superheroSmallV1.jpg"
+        });
+var imgE = document.getElementById("five")
+      imgE.addEventListener("click", function(){
+         chosenIMG = "img/westernSmallV1.jpg"
+      });
+var imgF = document.getElementById("six")
+      imgF.addEventListener("click", function(){
+         chosenIMG = "img/rainySmallV1.jpg"
+         });
+
+var buttonEl = document.getElementById("run")
+    buttonEl.addEventListener("click", function(){
+      //Get poster image
+      var imageEl = document.getElementById("placeholder").src = chosenIMG
+      var outputEl = document.getElementById("output")
+      var titleEl = document.getElementById("movie-name").value
+        outputEl.innerHTML = titleEl
+
+            })
