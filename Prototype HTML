@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Poster</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="css/site.css">
+    <script src= "js/experiment1.js"defer> </script>
+  </head>
+  <body>
+  <div id = "textbox">
+    <form>
+      <lable for="movie-name">Input your movie title here:</lable><br>
+      <input type = "text" id ="movie-name" name= "movie-name" value ="your name">
+    </form>
+  </div>
+  <div>
+    <label for="genera">Choose a Style:</label>
+
+<select name="genera" id="genera">
+  <option value="romance" >Romance</option>
+  <option value="western">Western</option>
+  <option value="action">Action</option>
+  <option value="sci-fi">Sci-fi</option>
+  <option value="horror">Horror</option>
+  <option value="superhero">Superhero</option>
+</select>
+<br></br>
+  </div>
+    <button id="one" class = "poster" value="a"><img src = "img/horrorSmallV3.jpg"></button>
+    <button id ="two" class = "poster" value="b"><img src = "img/romanceSmallV2.jpg"></button>
+    <button id = "three" class = "poster" value="c"><img src = "img/scifiSmallV2.jpg"></button>
+    <button  id= "four" class = "poster" value="d"><img src = "img/superheroSmallV3.jpg"></button>
+    <button  id = "five" class = "poster" value="e"><img src = "img/westernSmallV3.jpg"></button>
+    <button  id = "six" class = "poster" value="f"><img src = "img/rainySmallV2.jpg"></button>
+    <br></br>
+    <div id= "posterImage" >
+    <img id = "placeholder" src= "img/untitled6.jpg">
+   </div>
+   <div id= output>
+    </div>
+   <button id = "run">Create!</button>
+
+  </body>
+</html>
