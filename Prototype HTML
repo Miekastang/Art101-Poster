@@ -11,7 +11,7 @@
   <div id = "textbox">
     <form>
       <lable for="movie-name">Input your movie title here:</lable><br>
-      <input type = "text" id ="movie-name" name= "movie-name" value ="your name">
+      <input type = "text" id ="movie-name" name= "movie-name" placeholder ="your name">
     </form>
   </div>
   <div>
