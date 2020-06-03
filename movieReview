@@ -1,0 +1,20 @@
+//The HTML needed to implement this JavaScript is a button with the ID "quote" and a div with the ID "quoteDisplay"
+var button = document.getElementById("quote");
+  button.addEventListener("click",function quoteGen() {
+quotes = [
+      "&#9733	&#9734 &#9734 &#9734 &#9734 This flabby film ... deserves only one thing: to fall on its fat one. -Allen Adams",
+      "&#9733	&#9734 &#9734 &#9734 &#9734 Whoever gave this film the green light...should be arrested. - Melalin Mahavongtrakul ",
+      "&#9733	&#9733 &#9734 &#9734 &#9734 A waste of my money. - Elisabeth Vincentelli",
+      "&#9733	&#9733 &#9734 &#9734 &#9734 My mind erased this film from memory - Brian Viner ",
+      "&#9733	&#9733 &#9733 &#9734 &#9734 Not bad, not good. I'm neutral -Lydia Wang",
+      "&#9733	&#9733 &#9733 &#9734 &#9734 Maybe they should have budgeted for some star power - Joseph Falcone",
+      "&#9733	&#9733 &#9733 &#9733 &#9734 Beautiful, exciting, but the book was better. - Mauricio Gonzalez Lara",
+      "&#9733	&#9733 &#9733 &#9733 &#9734 Had me at the edge of my seat - Clint O'Connor",
+      "&#9733	&#9733 &#9733 &#9733 &#9733 An experience you'll remember forever - Amil Niazi",
+      "&#9733	&#9733 &#9733 &#9733 &#9733 MASTERPIECE - Helena Mount",
+      ],
+  ranNum = [Math.floor(Math.random() * quotes.length)];
+  chosenQuote = quotes[ranNum]+ '<br>';
+  console.log("chosen quote =", chosenQuote)
+  document.getElementById('quoteDisplay').innerHTML = chosenQuote;
+});
