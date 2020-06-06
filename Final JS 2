@@ -1,8 +1,12 @@
 //This is the JavaScript file for the randomized reviews. It prints when the "run" button in the html is hit (so does the image and the title.
 //It is called experiment2.js in the html
 
+//add even listener for "run" button
+
 var button = document.getElementById("run");
-  button.addEventListener("click",function quoteGen() {
+  button.addEventListener("click",function quoteGen() 
+//quotes
+  {
 quotes = [
       "&#9733	&#9734 &#9734 &#9734 &#9734 This flabby film ... deserves only one thing: to fall on its fat one. -Allen Adams",
       "&#9733	&#9734 &#9734 &#9734 &#9734 Whoever gave this film the green light...should be arrested. - Melalin Mahavongtrakul ",
@@ -15,8 +19,10 @@ quotes = [
       "&#9733	&#9733 &#9733 &#9733 &#9733 An experience you'll remember forever - Amil Niazi",
       "&#9733	&#9733 &#9733 &#9733 &#9733 MASTERPIECE - Jackson Rourke",
       ],
+ //get random quote
   ranNum = [Math.floor(Math.random() * quotes.length)];
   chosenQuote = quotes[ranNum]+ '<br>';
   console.log("chosen quote =", chosenQuote)
+//output
   document.getElementById("quoteDisplay").innerHTML = chosenQuote;
 });
