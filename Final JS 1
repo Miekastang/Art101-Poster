@@ -2,6 +2,7 @@
 //It is refered to as experiment1.js in the html.
 
 var chosenIMG = "untitled6.jpg";
+
 //Set image buttons as variables
 var imgA = document.getElementById("one")
   imgA.addEventListener("click", function(){
@@ -27,13 +28,11 @@ var imgF = document.getElementById("six")
       imgF.addEventListener("click", function(){
          chosenIMG = "img/rainySmallV1.jpg"
          });
-
+         
+//add event listener for "run" button
 var buttonEl = document.getElementById("run")
     buttonEl.addEventListener("click", function(){
-      //Get poster image
-      var imageEl = document.getElementById("placeholder").src = chosenIMG
-      var outputEl = document.getElementById("output")
-    //  var titleEl = document.getElementById("movie-name").value
-    //    outputEl.innerHTML = titleEl
-
-            })
+//Get chosen image and print in to the output
+    var imageEl = document.getElementById("placeholder").src = chosenIMG
+    var outputEl = document.getElementById("output")
+  })
