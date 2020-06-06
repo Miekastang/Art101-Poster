@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Poster</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="css/site.css">
+          <!--Romantic-->
+          <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet'>
+          <!--Western alt = Smokum-->
+          <link href='https://fonts.googleapis.com/css?family=Ewert'rel='stylesheet'>
+          <!--SciFi alt ContrailOne-->
+          <link href='https://fonts.googleapis.com/css?family=Monoton'rel='stylesheet'>
+          <!-- Horror-->
+          <link href='https://fonts.googleapis.com/css?family=Lacquer'rel='stylesheet'>
+          <!-- Superhero-->
+          <link href='https://fonts.googleapis.com/css?family=Bowlby+One+SC'rel='stylesheet'>
+          <!--Action-->
+          <link href='https://fonts.googleapis.com/css?family=Racing+Sans+One'rel='stylesheet'>
+    <script src= "js/experiment1.js"defer> </script>
+    <script
+          src="https://code.jquery.com/jquery-3.5.1.min.js"
+          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+          crossorigin="anonymous">
+    </script>
+      <script src= "js/experiment2.js"defer> </script>
+      <script src= "js/experiment3.js"defer> </script>
+  </head>
+  <body>
+  <div id = "textbox">
+    <form>
+      <lable for="movie-name">Input your movie title here:</lable><br>
+      <input type = "text" id ="movie-name" name= "movie-name" value ="your name">
+    </form>
+  </div>
+  <div>
+    <label for="genre">Choose a Style:</label>
+
+<select name="genre" id="genre">
+  <option value="romance" >Romance</option>
+  <option value="western">Western</option>
+  <option value="action">Action</option>
+  <option value="scifi">Sci-fi</option>
+  <option value="horror">Horror</option>
+  <option value="superhero">Superhero</option>
+</select>
+<br></br>
+  </div>
+    <button id="one" class = "poster" value="a"><img src = "img/horrorSmallV3.jpg"></button>
+    <button id ="two" class = "poster" value="b"><img src = "img/romanceSmallV2.jpg"></button>
+    <button id = "three" class = "poster" value="c"><img src = "img/scifiSmallV2.jpg"></button>
+    <button  id= "four" class = "poster" value="d"><img src = "img/superheroSmallV3.jpg"></button>
+    <button  id = "five" class = "poster" value="e"><img src = "img/westernSmallV3.jpg"></button>
+    <button  id = "six" class = "poster" value="f"><img src = "img/rainySmallV2.jpg"></button>
+    <br></br>
+    <div id="title">
+    </div >
+    <!-- <button id="quote">quote</button> -->
+    <br></br>
+    <div id= "posterImage" >
+    <img id = "placeholder" src= "img/untitled6.jpg">
+   </div>
+     <div id= "quoteDisplay"></div>
+    <!--div id output was here -->
+   <div>
+     <p id = "outputGenre">the movie title</p>
+    </div>
+   <button id = "run">Create!</button>
+
+   </div>
+  </body>
+</html>
