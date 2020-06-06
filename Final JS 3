@@ -1,0 +1,46 @@
+//This is the JS file for getting the user input title and printing it in the font of their chosed genre.
+//Called experiment3.js in html
+
+
+//bring in user input
+// two classes that we're toggling between:
+$(document).ready(function(){
+    //when submit button is clicked, we want to save variable
+    //alt add $(submit)button
+    $("#run").click(function(){
+        // first, remove exisiting classes from output id
+        $('#outputGenre').removeClass();
+        var outputEl = document.getElementById("outputGenre");
+        var titleEl = document.getElementById("movie-name").value;
+        console.log("the inputted title is", titleEl);
+        outputEl.innerHTML = titleEl;
+        // want get genre value, save as variable
+        var selectedGenre = $("#genre").val();
+        console.log(selectedGenre);
+        if (selectedGenre == "horror"){
+            console.log("spooky");
+            $('#outputGenre').addClass('outputEl_addedClass_horror');
+        }
+        else if (selectedGenre == "western"){
+            console.log("yeehaw");
+            $('#outputGenre').addClass('outputEl_addedClass_western');
+        }
+        else if (selectedGenre == "action"){
+            console.log("action");
+            $('#outputGenre').addClass('outputEl_addedClass_action');
+        }
+        else if (selectedGenre == "romance"){
+            console.log("smoochy");
+            $('#outputGenre').addClass('outputEl_addedClass_romance');
+        }
+        else if (selectedGenre == "scifi"){
+            console.log("spaceship");
+            $('#outputGenre').addClass('outputEl_addedClass_scifi');
+        }
+        else if (selectedGenre == "superhero"){
+            console.log("kaboom");
+            $('#outputGenre').addClass('outputEl_addedClass_superhero');
+        }
+        // handle other selectedGenres
+    })
+})
