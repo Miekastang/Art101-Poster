@@ -1,22 +1,21 @@
 //This is the JS file for getting the user input title and printing it in the font of their chosed genre.
 //Called experiment3.js in html
 
-
-//bring in user input
-// two classes that we're toggling between:
 $(document).ready(function(){
     //when submit button is clicked, we want to save variable
     //alt add $(submit)button
     $("#run").click(function(){
         // first, remove exisiting classes from output id
         $('#outputGenre').removeClass();
+       //get user input
         var outputEl = document.getElementById("outputGenre");
         var titleEl = document.getElementById("movie-name").value;
         console.log("the inputted title is", titleEl);
         outputEl.innerHTML = titleEl;
-        // want get genre value, save as variable
+        //get genre value, save as variable
         var selectedGenre = $("#genre").val();
         console.log(selectedGenre);
+        //selected genre toggles class of output
         if (selectedGenre == "horror"){
             console.log("spooky");
             $('#outputGenre').addClass('outputEl_addedClass_horror');
@@ -41,6 +40,6 @@ $(document).ready(function(){
             console.log("kaboom");
             $('#outputGenre').addClass('outputEl_addedClass_superhero');
         }
-        // handle other selectedGenres
-    })
-})
+     
+    });
+});
