@@ -1,0 +1,69 @@
+#posterImage {
+float:right;
+margin: 20px;
+}
+
+#output {
+    position: absolute;
+    top: 850px;
+    right: 10px;
+    width: 450px;
+    word-wrap: break-word;
+    font-size: 350%;
+    line-height: 90%;
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    margin: 20px;
+    color: White
+}
+
+.outputEl_addedClass_horror {
+    color: black;
+    text-shadow: 0 0 7px #FF0000;
+    font-family: "Lacquer";
+    font-size: 50px;
+}
+.outputEl_addedClass_western {
+    color: goldenrod;
+    font-family:"Ewert";
+    font-size:50px;
+}
+.outputEl_addedClass_superhero {
+    color: blue;
+    font-family: "Bowlby One SC";
+    font-size: 50px;
+}
+.outputEl_addedClass_scifi {
+  color: darkgrey;
+  font-family: "Monoton";
+  font-size: 50px;
+  text-shadow: 0 0 10px palegreen;
+}
+.outputEl_addedClass_romance {
+  color: whitesmoke;
+font-family: "Tangerine";
+text-shadow: 0 5px #000000;
+font-size: 50px;
+}
+.outputEl_addedClass_action {
+  color: black;
+  text-shadow: 0 0 10px #add8e6;
+  font-family: "Racing Sans One";
+  font-size: 50px;
+}
+
+
+#submit{
+	background-color:transparent;
+	border-radius:38px;
+	border:2px solid #192dab;
+	display:inline-block;
+	cursor:pointer;
+	color:#d42652;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:-2px -2px 50px #2f6627;
+}
