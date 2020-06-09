@@ -1,0 +1,152 @@
+#panel {
+    font-family: "Cinzel Black";
+    position: relative;
+    color: crimson;
+    font-size: 300%;
+    background-color: black;
+    max-width: auto;
+    max-height: auto;
+    text-indent: 0px;
+    border: 15px solid black;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+    margin-bottom: 10px;
+}
+#posterWidth {
+    width: 50%;
+    float: left;
+}
+
+#credits {
+    font-family: "Shrikhand";
+    font-size: 40%;
+    color: white;
+}
+
+#placeholder {
+  width:500px;
+  height:700px;
+}
+
+#inputTitle {
+    float: right;
+    background-color: grey;
+    word-wrap: break-word;
+    font-size: 350%;
+    line-height: 90%;
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    color: white;
+    width: 50%;
+}
+
+#quoteDisplay
+{
+  font-size: 20px;
+      color: yellow;
+      max-width: 300px;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.container {
+  position: relative;
+text-align: center;
+color: white;
+}
+
+.outputEl_addedClass_horror {
+    color: black;
+    text-shadow: 0 0 7px #FF0000;
+    font-family: "Lacquer";
+    font-size: 70px;
+    position: absolute;
+    bottom: 75%;
+    left: 50%;
+    max-height: 120px;
+    max-width: 400px;
+    transform: translate(-50%, -50%);
+}
+.outputEl_addedClass_western {
+    color: goldenrod;
+    font-family:"Ewert";
+    font-size:70px;
+    position: absolute;
+  bottom: 75%;
+  left: 50%;
+  max-height: 120px;
+    max-width: 400px;
+  transform: translate(-50%, -50%);
+}
+.outputEl_addedClass_superhero {
+    color: blue;
+    font-family: "Bowlby One SC";
+    font-size: 70px;
+    position: absolute;
+  bottom: 75%;
+  left: 50%;
+  max-height: 120px;
+    max-width: 400px;
+  transform: translate(-50%, -50%);
+}
+.outputEl_addedClass_scifi {
+    color: darkgrey;
+    font-family: "Monoton";
+    font-size: 70px;
+    text-shadow: 0 0 10px palegreen;
+    position: absolute;
+  bottom: 75%;
+  left: 50%;
+  max-height: 120px;
+    max-width: 400px;
+  transform: translate(-50%, -50%);
+}
+.outputEl_addedClass_romance {
+    color: whitesmoke;
+    font-family: "Tangerine";
+    text-shadow: 0 5px #000000;
+    font-size: 70px;
+    position: absolute;
+  bottom: 75%;
+  left: 50%;
+  max-height: 120px;
+    max-width: 400px;
+  transform: translate(-50%, -50%);
+}
+.outputEl_addedClass_action {
+    color: black;
+    text-shadow: 0 0 10px #add8e6;
+    font-family: "Racing Sans One";
+    font-size: 70px;
+    position: absolute;
+  bottom: 75%;
+  left: 50%;
+  max-height: 120px;
+    max-width: 400px;
+  transform: translate(-50%, -50%);
+}
+
+.createButton {
+    box-shadow: 0px 0px 0px 0px #1c1b18;
+    background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+    background-color:#eae0c2;
+    border-radius:25px;
+    border:5px solid #333029;
+    display:inline-block;
+    cursor:pointer;
+    color:#505739;
+    font-family:Verdana;
+    font-size:16px;
+    font-weight:bold;
+    padding:19px 28px;
+    text-decoration:none;
+    text-shadow:0px 0px 0px #ffffff;
+}
+
+body {
+    background-image: url(21341788.png);
+}
